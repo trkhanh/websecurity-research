@@ -1,3 +1,6 @@
+
+https://expressjs.com/en/advanced/best-practice-performance.html
+
 - Things to do in your code (the dev part):
 
 * Use gzip compression
@@ -13,3 +16,5 @@
 * Cache request results
 * Use a load balancer
 * Use a reverse proxy
+
+
