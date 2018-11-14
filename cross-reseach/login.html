@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <form onsubmit="handleLogin(); return false;">
+        Username: <input type="text" id="username" />
+        Password: <input type="password" id="password" />
+        <input type="submit" id="btnSubmit" value="Login" />
+    </form>
+    <script>
+        var handleLogin = function () {
+            var username = document.getElementById('username').value;
+            document.cookie = 'username=' + username;
+            window.location = '/client';
+        }
+    </script>
+</body>
+
+</html>
