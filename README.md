@@ -24,26 +24,26 @@ let’s look at how the browser sets the Origin header on requests.
 6. What is Cross-Site Request Forgery(CSRF) in simple words?
 
 ### Here is a recap of each header:
-■ Access-Control-Allow-Origin:
+#### ■ Access-Control-Allow-Origin:
 – Use the * value to allow requests from all origins.
 – Use a whitelist to allow only certain origins.
-■ Access-Control-Allow-Credentials:
+#### ■ Access-Control-Allow-Credentials:
 – Setting the value to true allows cookies on requests.
 – Enable cookies only if you’re sure you need them.
 – If your server does support cookies, be sure to also validate the origin and
 implement CSRF protection.
-■ Access-Control-Allow-Methods:
+#### ■ Access-Control-Allow-Methods:
 – This header only needs to be present on preflight responses.
 – It indicates which HTTP methods are allowed on a URL.
 – Common values include HEAD, OPTIONS, GET, POST, PUT, PATCH, and DELETE.
-■ Access-Control-Allow-Headers:
+#### ■ Access-Control-Allow-Headers:
 – This header only needs to be present on preflight responses.
 – It indicates which HTTP headers are allowed on a URL.
 – Echo the Access-Control-Request-Headers value to get full header support.
-■ Access-Control-Max-Age:
+#### ■ Access-Control-Max-Age:
 – This header only needs to be present on preflight responses.
 – It indicates how many seconds to cache preflight requests for.
 – Browsers may have their own maxAge caps.
-■ Access-Control-Expose-Headers:
+#### ■ Access-Control-Expose-Headers:
 – This header indicates which response headers to expose to clients.
 – It’s an optional header that isn’t required for a successful CORS request
